@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www & npm start --prefix dist"
+    "start": "node ./bin/www",
+    "build": "ng build --prod --prefix dist",
+    "heroku-postbuild": "ng build --prod --prefix dist"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
