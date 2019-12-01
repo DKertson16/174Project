@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "echo postbuild & cd frontend & npm install"
+    "postinstall": "cd frontend && npm install"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
